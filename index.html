@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="relative bg-yellow-400 overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+        >
+          <div>
+            <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+              <nav
+                class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                aria-label="Global"
+              >
+                <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                  <div class="flex items-center justify-between w-full md:w-auto">
+                    <a href="/">
+                      <span class="sr-only">Khuda Lagse Bhai</span>
+                      <img
+                        alt="Workflow"
+                        class="h-8 w-auto sm:h-10"
+                        src="media/khuda lagse bhai log.png"
+                      />
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                      <button
+                        type="button"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-black-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500"
+                        aria-expanded="false"
+                      >
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Heroicon name: outline/bars-3 -->
+                        <svg
+                          class="h-6 w-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                  <a href="/" class="font-medium text-black-200 hover:text-gray-900"
+                    >Home</a
+                  >
+
+                  <a href="#" class="font-medium text-black-200 hover:text-gray-900"
+                    >Features</a
+                  >
+
+                  <a href="#" class="font-medium text-black-200 hover:text-gray-900"
+                    >Marketplace</a
+                  >
+
+                  <a href="#" class="font-medium text-black-200 hover:text-gray-900"
+                    >Company</a
+                  >
+
+                  <a href="#" class="font-medium text-red-600 hover:text-red-500"
+                    >Log in</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            <!--
+            Mobile menu, show/hide based on menu open state.
+  
+            Entering: "duration-150 ease-out"
+              From: "opacity-0 scale-95"
+              To: "opacity-100 scale-100"
+            Leaving: "duration-100 ease-in"
+              From: "opacity-100 scale-100"
+              To: "opacity-0 scale-95"
+          -->
+            <div
+              class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+            >
+              <div
+                class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+              >
+                <div class="px-5 pt-4 flex items-center justify-between">
+                  <div>
+                    <img
+                      class="h-8 w-auto"
+                      src="https://tailwindui.com/img/logos/workflow-mark.svg?color=red&shade=600"
+                      alt=""
+                    />
+                  </div>
+                  <div class="-mr-2">
+                    <button
+                      type="button"
+                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-black-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500"
+                    >
+                      <span class="sr-only">Close main menu</span>
+                      <!-- Heroicon name: outline/x-mark -->
+                      <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                  <a
+                    href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >Product</a
+                  >
+
+                  <a
+                    href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >Features</a
+                  >
+
+                  <a
+                    href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >Marketplace</a
+                  >
+
+                  <a
+                    href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >Company</a
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100"
+                >
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <main
+            class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          >
+            <div class="sm:text-center lg:text-left">
+              <h1
+                class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl"
+              >
+                <span class="block xl:inline">Looking for some great game recipes?</span>
+                <span class="block text-red-600 xl:inline"> Family Favorite Recipe</span>
+              </h1>
+              <p
+                class="mt-3 text-base text-black-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+              >
+                Khuda Lagse’s Healthy Mediterranean Baked Haddock, as seen on Food
+                Network. All the Healthy Weeknight Dinner Ideas You'll Ever Need
+              </p>
+              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div class="rounded-md shadow">
+                  <a
+                    href="#"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
+                  >
+                    Get started
+                  </a>
+                </div>
+                <div class="mt-3 sm:mt-0 sm:ml-3">
+                  <a
+                    href="#"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg md:px-10"
+                  >
+                    Live demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div
+        class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-no-repeat bg-bottom"
+        style="background-image: url(media/khuda\ lagse\ bhai\ red\ dot.png)"
+      >
+        <!-- <img class="w-full object-cover" src="/media/khuda lagse bhai (1).png" alt="" /> -->
+      </div>
+    </div>
+    <!-- search bar -->
+    <div class="container p-10 mx-auto">
+      <div class="form-control mx-auto">
+        <div class="input-group flex justify-center">
+          <input
+            type="text"
+            placeholder="Search Your Recipe…"
+            class="input input-bordered w-1/2"
+            id="input-search"
+          />
+          <button
+            class="btn btn-square bg-red-600 border-none"
+            id="search-meal"
+            onclick="serachInputData()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- body scection started  -->
+    <div class="container mx-auto">
+      <h1 class="text-center text-2xl font-black p-10">Recepies</h1>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-20 mx-5"
+        id="recipe-container"
+      ></div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
+
+<!--  -->
