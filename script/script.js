@@ -48,33 +48,109 @@ const showMealDetails = (url) => {
   const div = document.createElement("div");
   div.innerHTML = `
   
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mb-20 mx-5" id=#asdf> 
-    <div class="card w-full bg-base-100 shadow-xl">
-    <figure><img src=${url.strMealThumb} /></figure>
+  <div class="grid grid-cols-1 gap-10 mb-20 mx-5" id=#asdf> 
+    <div class="card w-full lg:card-side bg-base-100 shadow-xl">
+    <figure class="!items-start	"><img src=${url.strMealThumb} /></figure>
     <div class="card-body">
     <h2 class="card-title">${url.strMeal}<div class="badge badge-secondary">${url.strCategory}</div></h2>
     <div class="card-actions justify-end">
-    <div class="badge badge-outline">${url.strIngredient1}</div> 
-    <div class="badge badge-outline">${url.strIngredient2}</div> 
-    <div class="badge badge-outline">${url.strIngredient3}</div> 
-    <div class="badge badge-outline">${url.strIngredient4}</div> 
-    <div class="badge badge-outline">${url.strIngredient5}</div> 
-    <div class="badge badge-outline">${url.strIngredient6}</div> 
-    <div class="badge badge-outline">${url.strIngredient7}</div> 
-    <div class="badge badge-outline">${url.strIngredient8}</div> 
-    <div class="badge badge-outline">${url.strIngredient9}</div> 
-    <div class="badge badge-outline">${url.strIngredient10}</div> 
-    <div class="badge badge-outline">${url.strIngredient11}</div> 
-    <div class="badge badge-outline">${url.strIngredient12}</div> 
-    <div class="badge badge-outline">${url.strIngredient13}</div> 
-    <div class="badge badge-outline">${url.strIngredient14}</div> 
-    <div class="badge badge-outline">${url.strIngredient15}</div> 
-    <div class="badge badge-outline">${url.strIngredient16}</div> 
-    <div class="badge badge-outline">${url.strIngredient17}</div> 
-    <div class="badge badge-outline">${url.strIngredient18}</div> 
-    <div class="badge badge-outline">${url.strIngredient19}</div> 
-    <div class="badge badge-outline">${url.strIngredient20}</div> 
+
     
+
+
+    
+  <table class="table w-full">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>Ingredient</th>
+        <th>Measure</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>     
+        <td>${url.strIngredient1}</td>
+        <td>${url.strMeasure1}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient2}</td>
+        <td>${url.strMeasuret2}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient3}</td>
+        <td>${url.strMeasure3}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient4}</td>
+        <td>${url.strMeasure4}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient5}</td>
+        <td>${url.strMeasure5}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient6}</td>
+        <td>${url.strMeasure6}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient7}</td>
+        <td>${url.strMeasure7}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient8}</td>
+        <td>${url.strMeasure8}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient9}</td>
+        <td>${url.strMeasure9}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient10}</td>
+        <td>${url.strMeasure10}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient11}</td>
+        <td>${url.strMeasure11}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient12}</td>
+        <td>${url.strMeasure12}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient13}</td>
+        <td>${url.strMeasure13}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient14}</td>
+        <td>${url.strMeasure14}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient15}</td>
+        <td>${url.strMeasure15}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient16}</td>
+        <td>${url.strMeasure16}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient17}</td>
+        <td>${url.strMeasure17}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient18}</td>
+        <td>${url.strMeasure18}</td>
+      </tr>
+      <tr>     
+        <td>${url.strIngredient19}</td>
+        <td>${url.strMeasure19}</td>
+      </tr>
+     
+     
+    </tbody>
+  </table>
+
+
+
   </div>
     <p>${url.strInstructions}</p>
    
