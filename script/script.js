@@ -16,15 +16,13 @@ const showMealData = (meals) => {
 
     const div = document.createElement("div");
     div.innerHTML = `
-    <a href="#asdf">
+    <a href="#scroll-to-top" class="duration-500 animate-bounce	"> 
       <div onclick="recipeDetails(${meal.idMeal})" class="card w-auto bg-base-100 shadow-xl h-full" >
   <figure><img src=${meal.strMealThumb} alt="Shoes" /></figure>
       <div class="card-body">
         <h2 class="card-title">${meal.strMeal}</h2>
         <div class="badge">${meal.strCategory}</div>
         <p class="truncate">${meal.strInstructions}</p>
-        
-        
       </div>
     </div>
     </a>
@@ -47,18 +45,13 @@ const showMealDetails = (url) => {
   recipeDetails.innerHTML = "";
   const div = document.createElement("div");
   div.innerHTML = `
-  
-  <div class="grid grid-cols-1 gap-10 mb-20 mx-5" id=#asdf> 
+
+  <div class="grid grid-cols-1 gap-10 mb-20 mx-5"> 
     <div class="card w-full lg:card-side bg-base-100 shadow-xl">
     <figure class="!items-start	"><img src=${url.strMealThumb} /></figure>
     <div class="card-body">
     <h2 class="card-title">${url.strMeal}<div class="badge badge-secondary">${url.strCategory}</div></h2>
     <div class="card-actions justify-end">
-
-    
-
-
-    
   <table class="table w-full">
     <!-- head -->
     <thead>
